@@ -1,0 +1,146 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #0b3d91;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+p {
+  text-align: center;
+  color: #6b7a8f;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 700px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+fieldset {
+  border: none;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #a1bac8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+legend {
+  font-weight: bold;
+  color: #0078d4;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #eeebeb;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #e1e5ea;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  color: #333333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #0078d4;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 120, 212, 0.3);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #005a9e;
+  transform: scale(1.05);
+}
+
+#resumeOutput {
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #d3d9df;
+  border-radius: 10px;
+  background-color: #f5f9fd;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+#resumeOutput h2 {
+  color: #0078d4;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.profilePicture {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #0078d4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.profilePicture:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+#editResume, #downloadResume {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+}
+
+fieldset + fieldset {
+  margin-top: 30px;
+}

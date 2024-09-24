@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Resume Generator</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <h1>Resume Generator</h1>
+    <p>Abdul Rehman</p>
+
+    <form id="Resumeform">
+        <fieldset class="section animate fade-in">
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full Name" required /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required />
+
+            <label for="phone">Phone No:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your Phone number" required />
+        </fieldset>
+
+        <fieldset class="section animate slide-in-left">
+            <legend>Education</legend>
+            <textarea id="education" name="education" rows="4" placeholder="List your education details here" required></textarea>
+        </fieldset>
+
+        <fieldset class="section animate slide-in-right">
+            <legend>Experience</legend>
+            <textarea id="experience" name="experience" rows="4" placeholder="Describe your experience here" required></textarea>
+        </fieldset>
+
+        <fieldset class="section animate slide-in-left">
+            <legend>Skills</legend>
+            <textarea id="skills" name="skills" rows="4" placeholder="List your skills here" required></textarea>
+        </fieldset>
+
+        <fieldset class="section animate slide-in-right">
+            <legend>Achievements</legend>
+            <textarea id="achievements" name="achievements" rows="4" placeholder="List your achievements here" required></textarea>
+        </fieldset>
+
+        <fieldset class="section animate fade-in">
+            <legend>Links</legend>
+            <label for="linkedin">LinkedIn:</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn profile URL" required /><br />
+
+            <label for="github">GitHub:</label>
+            <input type="url" id="github" name="github" placeholder="Enter your GitHub profile URL" required /><br />
+            
+            <label for="profilepicture">Profile Picture:</label>
+            <input type="file" id="profilepicture" name="profilepicture" accept="image/*" required />
+        </fieldset>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <button id="editResume" style="display: none;">Edit Resume</button>
+    <button id="downloadResume" style="display: none;">Download Resume as PDF</button>
+
+    <div id="resumeOutput"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
